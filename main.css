@@ -29,6 +29,7 @@ header {
 
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 header ul {
   list-style: none;
@@ -97,6 +98,11 @@ main section.second-section article.projects {
   width: 200px;
   min-height: 320px;
   box-shadow: 0 4px 4px rgb(0, 0, 0, 19%);
+
+  transition: 0.3s;
+}
+.projects .project:hover {
+  transform: scale(1.05);
 }
 .projects .project h3 {
   font-size: 1rem;
